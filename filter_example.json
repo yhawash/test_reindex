@@ -1,0 +1,22 @@
+[
+  {
+    "index": "job_application",
+    "filter": {
+      "$or": [
+        {
+          "job_offers": {
+            "$ne": []
+          }
+        },
+        {
+          "interview": {
+            "$ne": null
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": "inteview"
+  }
+]
